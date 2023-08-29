@@ -415,3 +415,27 @@
   415  wget www.github.com
   416  wget www.github.com
   417  history > cmds.log
+  418  git status
+  419  git add cmds.log
+  420  git status
+  421  git commit -m "Updated CMD to include wget"
+  422  git push origin tommy-new-branch
+  423  git status
+  424  git push origin tommy-new-branch
+  425  git pull
+  426  git branch
+  427  git status
+  428  git push origin tommy-new-branch
+  429  git pull
+  430  git pull remote main
+  431  git pull origin master
+  432  git push origin tommy-new-branch
+  433  git status
+  434  git commit -m "Strange... this should be pushed"
+  435  git commit -m "Strange... this should be pushed"
+  436  git add /git
+  437  git status
+  438  git commit -m "Strange... this should be pushed"
+  439  git at rm git
+  440  git rm cmds.log
+  441  history > cmds.log
