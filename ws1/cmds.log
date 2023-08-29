@@ -392,3 +392,50 @@
   392  cd Desktop
   393  cd CS131_Projects/
   394  history > cmds.log
+  395  git commit push
+  396  git commit 
+  397  git ad cmds.log
+  398  git add cmds.log
+  399  git push
+  400  git push tommy-new-branch
+  401  git touch
+  402  git status
+  403  git commit -m "Added directory ws1's new contents v2"
+  404  git push
+  405  git push tommy-new-branch
+  406  git branch
+  407  git push origin tommy-new-branch
+  408  git status
+  409  git add ws1/cmds.log
+  410  git commit -m "Moved WS1 content into the right directory"
+  411  git push origin tommy-new-branch
+  412  ls
+  413  ls
+  414  cd ws1/
+  415  wget www.github.com
+  416  wget www.github.com
+  417  history > cmds.log
+  418  git status
+  419  git add cmds.log
+  420  git status
+  421  git commit -m "Updated CMD to include wget"
+  422  git push origin tommy-new-branch
+  423  git status
+  424  git push origin tommy-new-branch
+  425  git pull
+  426  git branch
+  427  git status
+  428  git push origin tommy-new-branch
+  429  git pull
+  430  git pull remote main
+  431  git pull origin master
+  432  git push origin tommy-new-branch
+  433  git status
+  434  git commit -m "Strange... this should be pushed"
+  435  git commit -m "Strange... this should be pushed"
+  436  git add /git
+  437  git status
+  438  git commit -m "Strange... this should be pushed"
+  439  git at rm git
+  440  git rm cmds.log
+  441  history > cmds.log
