@@ -1,0 +1,56 @@
+
+   38  mkdir WS2
+   39  ls
+   40  cd WS2
+   41  cp /datasets/taxidata.tar.gz .
+   42  ls
+   43  man tar
+   44  ls
+   45  tar taxidata.tar.gz
+   46  tar xvzf taxidata.tar.gz
+   47  ls
+   48  cs taxidata
+   49  cd taxidata
+   50  ls
+   51  man grep
+   52  grep 2019-01.csv 
+   53  cat 2019-01.csv
+   54  head -10 2019-01.csv 
+   55  tail  -10 2019-01.csv 
+   56  tail  -10 2019-03.csv 
+   57  tail  -10 2019-04.csv 
+   58  head  -10 2019-04.csv 
+   59  man cut
+   60  cut -d',' -f3 2019-03.csv 
+   61  cut -d',' -f3 2019-03.csv > dropoff.txt
+   62  head dropoff.txt head dropoff.txt 
+   63  head dropoff.txt 
+   64  tail dropoff.txt 
+   65  ls
+   66  man awk
+   67  tail  -10 2019-03.csv 
+   68  grep "(.*)....,"2019-03-31(.*)" 2019-03.csv
+   69  grep '(.*)....,"2019-03-31(.*)' 2019-03.csv 
+   70  grep '(.*)....,"2019-03-31(.*)' 2019-03.csv
+   71  grep '(.*)....,"2019-03-12(.*)' 2019-03.csv
+   72  grep -e '(.*)....,"2019-03-12(.*)' 2019-03.csv
+   73  grep -E '(.*)....,"2019-03-12(.*)' 2019-03.csv
+   74  grep -E '(.*)....,"2019-03-12(.*)' 2019-03.csv > march12.txt
+   75  head march12.txt 
+   76  tail  march12.txt 
+   77  tail -20 march12.txt 
+   78  tail -20 march12.txt > results.txt
+   79  cat results.txt 
+   80  ls
+   81  wc grep -E '(.*)....,"2019-03-12(.*)' 2019-03.csv
+   82  wc march12.txt 
+   83  head march12.txt 
+   84  wc march12.txt 
+   85  wc man
+   86  man wc
+   87  wc -l march12.txt 
+   88  wc -l march12.txt >> results.txt 
+   89  cat results.txt 
+   90  vim results.txt 
+   91  cat results.txt 
+   92  history > cmds.log
