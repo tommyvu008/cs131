@@ -1,0 +1,32 @@
+1. Directory A1 Created.
+
+2. My home directory path is /mnt/scratch/tommy23fa. I used cd with
+no arguments and then used pwd to get the directory.
+
+
+3.uid=1033(tommy23fa) gid=1033(tommy23fa) groups=1033(tommy23fa)
+tommy23fa
+
+My UID is 1033 and my group is tommy23fa. I used the id argument with groups to find out my UID and group respectively.
+
+4.After removing permissions from myself with chmod -x temp, we are not allowed to
+cd in that directory, nor can we ls it. Using ls-l shows the total as 0. We alsoare not allowed to create files under it, as I tried creating a file into there
+and it gave me a permission error.
+
+5. We are allowed to move the temp2 directory to temp 3. When attempting to cp a directory into another, it gave me a warning
+"cp: -r not specified; omitting directory 'temp2'". After applying cp -r temp2 temp3, it worked just fine we are allowed
+to copy directories.
+
+6. The meminfo file contains information on the memory in my server. The cpuinfo file contains information about cpu's on my server.
+
+7. According to meminfo, I have 73080512 kB in total in my server. 
+
+8. According to head, tail, and cat on cpuinfo, There are 256 processors in my server, as the first processor is numbered 0
+and the last numbered 255. The processor architecture name is POWER8 (architected). The processor speed is 3425.000000MHz
+, which is 3.425 GHz. 
+
+9. The file os-release contained information on the operating system version. It's full name is "Red Hat Enterprise Linux 8.6 (Ootpa)", version being 8.6 (Ootpa).
+
+
+10. The permissions given to the os-releases file are lrwxrwxrwx.The last set of rwx means that everyone has access to read, read, and execute the os-releases file.
+
