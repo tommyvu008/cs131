@@ -1,0 +1,58 @@
+Question  1. 
+  186  mkdir a1
+  188  cd a1
+
+Question 2.
+  189  pwd
+  190  echo $HOME
+  
+Question 3.
+  224  echo $UID
+  225  id
+
+Question 4.
+  231  mkdir temp
+  232  man schmod
+  235  cd temp
+  237  chmod -x temp
+  246  cd temp
+  248  ls temp
+  251  ls -1 temp
+  304  touch tempTry.txt temp
+
+Question 5.
+  333  mkdir temp2
+  378  mkdir temp3
+  380  mv temp2 temp3
+  384  cd temp3
+  385  ls
+  386  rm temp2
+  401  cd ..
+  402  mkdir temp2
+  403  cp temp2 temp3
+  404  cp -r temp2 temp3
+  406  cd temp3
+  407  ls
+
+Question 6.
+  408  cd /proc/ 
+  409  ls
+  410  ls meminfo
+  412  ls cpuinfo
+	
+Question 7.
+  417  cat meminfo
+  418  head meminfo
+ 
+Question 8.
+  420  tail cpuinfo
+  421  head cpuinfo
+  422  cat cpuinfo 
+
+Question 9.
+  424  cd /etc/
+  425  ls
+  426  cat os-release 
+
+Question 10.
+  427  ls -l os-release 
