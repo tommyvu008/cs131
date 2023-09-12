@@ -1,0 +1,13 @@
+Question 1 Commands:
+  535  cut -d',' -f8 2019-01.csv > locationID.txt  
+  542  sort locationID.txt > sortedLocationID.txt
+  543  uniq -c sortedLocationID.txt > totals.txt
+  562  sort -nr totals.txt > janPopularSpots.txt 
+  564  head -3 janPopularSpots.txt > janThreePopular.txt
+ 
+Question 2 Commands: 
+  566  cut -d',' -f8 2019-02.csv > febLocationID.txt
+  567  sort febLocationID.txt > febSortedLocationID.txt
+  568  uniq -c febSortedLocationID.txt > febUniqID.txt
+  569  sort -nr febUniqID.txt > febPopular.txt 
+  570  head -3 febPopular.txt > febThreePopular.txt
