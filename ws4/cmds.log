@@ -1,0 +1,22 @@
+Task 1:
+  731  source ~/.bashrc
+  732  vim .bashrc
+  733  source ~/.bashrc
+  734  l
+  735  w
+
+Task 2:
+  738  mkdir ws4
+  740  cd ws4
+  809  mkdir FARE
+  812  pwd
+  824  grep -E "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,147.0,149.0" 2019-06.csv > june145-145.txt
+  828  cut -d',' -f11 june145-145.txt > 145.0-145.0.txt
+  829  mv 145.0-145.0.txt /mnt/scratch/tommy23fa/cs131/ws4/FARE
+  830  grep -E "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,149.0,149.0" 2019-06.csv > june149-149.txt
+  831  cut -d',' -f11 june149-149.txt > 149.0-149.0.txt
+  832  mv 149.0-149.0.txt /mnt/scratch/tommy23fa/cs131/ws4/FARE
+  633  cd  /mnt/scratch/tommy23fa/cs131/ws4/FARE
+  879  awk '{sum += $1} END {print sum/NR}' 149.0-149.0.txt | bc >> ws4.txt
+  880  awk '{sum += $1} END {print sum/NR}' 145.0-145.0.txt | bc >> ws4.txt 
+  885  mv ws4.txt ..

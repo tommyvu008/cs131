@@ -1,0 +1,5 @@
+Average Mean of 149.0 - 149.0
+9.83323
+
+Average Mean of 145.0 - 145.0
+5.58231
