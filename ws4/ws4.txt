@@ -1,3 +1,32 @@
+Task 1 Results:
+[tommy23fa@sjsu ~]$ l
+total 764
+-rw-rw-r-- 1 tommy23fa tommy23fa 235690 Aug 28 06:55 index.html
+-rw-rw-r-- 1 tommy23fa tommy23fa 235700 Aug 29 04:54 index.html.1
+-rw-rw-r-- 1 tommy23fa tommy23fa     66 Aug 30 17:15 hellovim.txt
+-rw-rw-r-- 1 tommy23fa tommy23fa     70 Aug 30 17:20 searchfile.txt
+-rw-rw-r-- 1 tommy23fa tommy23fa     70 Aug 30 17:23 newSearch.txt
+-rw-rw-r-- 1 tommy23fa tommy23fa     28 Aug 30 17:36 errDate.txt
+-rw-rw-r-- 1 tommy23fa tommy23fa      0 Aug 30 17:36 date.txt
+drwxrwxr-x 3 tommy23fa tommy23fa   4096 Sep  3 20:53 WS2
+-rw-rw-r-- 1 tommy23fa tommy23fa 239201 Sep  4 01:14 index.html.2
+-rw-rw-r-- 1 tommy23fa tommy23fa     21 Sep  6 16:55 vimPractice.txt
+-rw-rw-r-- 1 tommy23fa tommy23fa   6365 Sep  6 18:13 cmdsProto.log
+drwxrwxr-x 8 tommy23fa tommy23fa   4096 Sep 13 16:40 cs131
+-rw-rw-r-- 1 tommy23fa tommy23fa    323 Sep 15 19:48 ws4.txt
+drwxrwxr-x 4 tommy23fa tommy23fa   4096 Sep 18 16:56 test
+-rw-rw-r-- 1 tommy23fa tommy23fa      0 Sep 18 16:58 sample.txt
+-rw-rw-r-- 1 tommy23fa tommy23fa      5 Sep 18 17:07 exp.txt
+-rw-rw-r-- 1 tommy23fa tommy23fa      3 Sep 18 17:08 result.txt
+-rw-rw-r-- 1 tommy23fa tommy23fa   2424 Sep 18 17:30 user.txt
+-rw-rw-r-- 1 tommy23fa tommy23fa   2533 Sep 18 17:37 users.lst
+-rw-rw-r-- 1 tommy23fa tommy23fa      0 Sep 18 17:39 wc
+-rw-rw-r-- 1 tommy23fa tommy23fa   2643 Sep 18 17:40 file
+[tommy23fa@sjsu ~]$ w
+     22     191    1333
+
+Fare Results:
+
 Average Mean of 149.0 - 149.0
 9.83323
 
