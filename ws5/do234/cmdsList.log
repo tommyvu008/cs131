@@ -1,0 +1,45 @@
+    1  mkdir TaxiData
+    2  pwd
+    3  cd TaxiData/
+    4  pwd
+    5  cd WS2
+    6  cd
+    7  cd WS2/
+    8  ls
+    9  cd taxidata/
+   10  ls
+   11  cd ..
+   12  mvdir taxidata /mnt/scratch/tommy23fa/TaxiData
+   13  mv taxidata /mnt/scratch/tommy23fa/TaxiData
+   14  sl
+   15  ls
+   16  cd
+   17  ls
+   18  cd TaxiData/
+   19  ls
+   20  cd taxidata/
+   21  cd
+   22  ls
+   23  cd cs131/
+   24  ls
+   25  mkdir ws5
+   26  cd ws5
+   27  ls
+   28  cd do234
+   29  mkdir do234
+   30  cd do234/
+   31  touch 1.0.txt
+   32  touch 3.0.txt
+   33  touch 48.0.txt
+   34  touch 223.0.txt
+   35  ls
+   36  pwd
+   37  /mnt/scratch/tommy23fa/cs131/ws5/do234
+   38  cd
+   39  cd TaxiData/taxidata/
+   40  ls
+   41  head -3 2019-08.csv 
+   42  grep -E "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,234.0" 2019-08.csv > pickup234.0.txt
+   43  head -10 pickup234.0.txt 
+   44  touch lol.txt /mnt/scratch/tommy23fa/cs131/ws5/do234
+   45  history > /mnt/scratch/tommy23fa/cs131/ws5/do234/cmdsList.log
