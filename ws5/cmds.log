@@ -1,0 +1,28 @@
+   42  grep -E "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,234.0" 2019-08.csv > pickup234.0.txt
+   52  cut -d',' -f9 pickup234.0.txt > dropoff234.0.txt
+   53  sort dropoff234.0.txt > sortedDropOff234.0.txt
+   54  uniq -c sortedDropOff234.0.txt > countedDrops234.0.txt
+   55  sort -nr countedDrops234.0.txt > top234.0.txt
+   57  awk '{print $2}' top234.0.txt > topDrops234.0.txt
+   61  vim extract100.sh
+
+   Inside extract100.sh:
+
+   for line in $(cat "topDrops234.0.txt");
+   do
+        grep -E "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,234.0,$line" pickup234.0.txt > /mnt/scratch/tommy23fa/cs131/ws5/do234/$line.txt
+        echo "$line"
+   done
+
+   63  chmod +rwx extract100.sh 
+   65  ./extract100.sh 
+  112  wc 1.0.txt >> count.txt
+  113  wc 3.0.txt >> count.txt
+  114  wc 48.0.txt >> count.txt
+  115  wc 223.0.txt >> count.txt
+  116  cat count.txt 
+  117  mv count.txt ..
+  119  ls
+  120  mv count.txt ws5.txt 
+  122  vim ws5.txt 
+  123  history > cmds.log
