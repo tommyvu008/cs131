@@ -1,0 +1,58 @@
+Task 1 Commands:
+  156  grep -E ".....2019-05-11" 2019-05.csv > may11.txt
+  157  head -10 may11.txt 
+  158  cut -d',' -f17 may11.txt > mayFares.txt
+  159  head -10 mayFares.txt 
+  160  awk '{sum += $1} END {print sum/NR}' mayFares.txt | bc >> mayFaresAvg.txt
+  161  cat mayFaresAvg.txt 
+
+Task 2 Commands: 
+  170  sort -nr mayFares.txt > mayFareTop.txt
+  171  head -2 mayFareTop.txt
+
+Task 3 Commands:
+  204  awk -F, '$4 > 2.0' 2019-05.csv > mayThreePass.txt
+  205  cut -d',' -f9 mayThreePass.txt > cutMayThree.txt
+  206  sort cutMayThree.txt > sortedmay3.txt
+  207  uniq -c sortedmay3.txt > 33passMay.txt
+  208  sort -nr 33passMay.txt > finalPass3May.txt
+  209  head -10 finalPass3May.txt
+
+
+Task 4 Commands:
+   Finding the most popular pick up on May 20
+
+   10  grep -E '(.*)....,"2019-05-20(.*)' 2019-05.csv > may20.txt
+   11  cut -d',' -f8 may20.txt > may20Pop.txt
+   12  sort may20Pop.txt > may20Sorted.txt
+   13  uniq -c may20Sorted.txt > may20PickSort.txt
+   14  sort -nr may20PickSort.txt > finalTopPickmay20.txt
+   15  head -3 finalTopPickmay20.txt
+ 
+   Finding the most popular drop off based on most pop pick up spot 237.0
+
+   22  grep -E "^([^,]*,){7}237.0" 2019-05.csv > 237.0.txt
+   24  cut -d',' -f9 237.0.txt > drop237.0.txt
+   25  sort drop237.0.txt > sorteddrop237.0.txt
+   26  uniq -c sorteddrop237.0.txt > sortteddrop237.0Count.txt
+   27  sort -nr sortteddrop237.0Count.txt > finalDrop237.0.txt
+   28  head -3 finalDrop237.0.txt
+
+
+ Task 5 Commands: 
+  367  cut -d',' -f8 2019-01.csv >> allPickup.txt
+  368  cut -d',' -f8 2019-02.csv >> allPickup.txt
+  369  cut -d',' -f8 2019-03.csv >> allPickup.txt
+  370  cut -d',' -f8 2019-04.csv >> allPickup.txt
+  371  cut -d',' -f8 2019-05.csv >> allPickup.txt
+  372  cut -d',' -f8 2019-06.csv >> allPickup.txt
+  373  cut -d',' -f8 2019-07.csv >> allPickup.txt
+  374  cut -d',' -f8 2019-08.csv >> allPickup.txt
+  375  cut -d',' -f8 2019-09.csv >> allPickup.txt
+  376  cut -d',' -f8 2019-10.csv >> allPickup.txt
+  377  cut -d',' -f8 2019-11.csv >> allPickup.txt
+  378  cut -d',' -f8 2019-12.csv >> allPickup.txt
+  379  sort allPickup.txt > allSortedPickup.txt
+  380  uniq -c allSortedPickup.txt > allSortedCountPickup.txt
+  381  sort -nr allSortedCountPickup.txt > allSortedPopularest.txt
+  383  head -2 allSortedPopularest.txt 
