@@ -1,8 +1,10 @@
-  18757 
-  5 
-  4463
-  156i
-"cs131/ws5/do234/1.0.txt": 18757 Entries
-"cs131/ws5/do234/3.0.txt": 5 Entries
+  249   747 32115 1.0.txt
+  4463  13389 563201 48.0.txt
+  156   468 19940 223.0.txt
+
+"cs131/ws5/do234/1.0.txt": 249 Entries
+"cs131/ws5/do234/3.0.txt": wc command doesn't work as 3.0 is not present in do234.
 "cs131/ws5/do234/48.0.txt": 4463 Entries
 "cs131/ws5/do234/223.0.txt": 156 Entries 
+
+
