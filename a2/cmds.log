@@ -31,7 +31,7 @@ Task 4 Commands:
  
    Finding the most popular drop off based on most pop pick up spot 237.0
 
-   22  grep -E "^([^,]*,){7}237.0" 2019-05.csv > 237.0.txt
+   22  grep -E '^([^,]*),"2019-05-20([^,]*,){6}237.0' 2019-05.csv > 237.0.txt
    24  cut -d',' -f9 237.0.txt > drop237.0.txt
    25  sort drop237.0.txt > sorteddrop237.0.txt
    26  uniq -c sorteddrop237.0.txt > sortteddrop237.0Count.txt
