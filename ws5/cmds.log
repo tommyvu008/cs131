@@ -1,19 +1,24 @@
+Command History:
+
    42  grep -E "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,234.0" 2019-08.csv > pickup234.0.txt
    52  cut -d',' -f9 pickup234.0.txt > dropoff234.0.txt
    53  sort dropoff234.0.txt > sortedDropOff234.0.txt
    54  uniq -c sortedDropOff234.0.txt > countedDrops234.0.txt
    55  sort -nr countedDrops234.0.txt > top234.0.txt
    57  awk '{print $2}' top234.0.txt > topDrops234.0.txt
+   58  head -100 topDrops234.0.txt > top100Drops234.0.txt
+   59  cat top100Drops234.0.txt > cpTop100.txt
+   60  cut -d,'.' -f1 cpTop100.txt > cpTop100noPeriod.txt
    61  vim extract100.sh
 
    Inside extract100.sh:
 
-   for line in $(cat "topDrops234.0.txt");
+     for line in $(cat "cpTop100noPeriod.txt");
    do
-        grep -E "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,234.0,$line" pickup234.0.txt > /mnt/scratch/tommy23fa/cs131/ws5/do234/$line.txt
+        grep -E "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,234.0,$line\.0" pickup234.0.txt > /mnt/scratch/tommy23fa/cs131/ws5/do234/$line.0.txt
         echo "$line"
    done
-
+    
    63  chmod +rwx extract100.sh 
    65  ./extract100.sh 
   112  wc 1.0.txt >> count.txt
