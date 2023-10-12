@@ -1,0 +1,12 @@
+Task 1 Commands:
+  835  sed -n '/^2\.0.*/p' 2019-11.csv > vendor2.csv 
+  836  wc vendor2.csv >> /mnt/scratch/tommy23fa/cs131/ws6/ws6.txt
+
+Task 2 Commands:
+  859  sed -e 's/://g' -e 's/"//g' -e 's/-//g' 2019-11.csv > no-seperators.csv
+  860  head -10 no-seperators.csv >> /mnt/scratch/tommy23fa/cs131/ws6/ws6.txt
+ 
+Task 3 Commands:
+  925  sed 's/\.[^,]*//g' no-seperators.csv > no-fractions.csv
+  926  head -10 no-fractions.csv >> /mnt/scratch/tommy23fa/cs131/ws6/ws6.txt 
+
