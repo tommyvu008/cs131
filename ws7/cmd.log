@@ -1,0 +1,7 @@
+Task 1:
+   23  awk -F',' '$17 >= 10 { print $14 }' 2019-12.csv > tipCount.txt
+   26  sort tipCount.txt > sortedTipCount.txt
+   27  uniq -c sortedTipCount.txt > countedTips.txt
+   32  uniq -c sortedTipCount.txt > /mnt/scratch/tommy23fa/cs131/ws7/results.txt 
+Task 2:
+   34  sort -nr countedTips.txt | head -20 > /mnt/scratch/tommy23fa/cs131/ws7/ws7.txt
