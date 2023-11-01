@@ -1,0 +1,18 @@
+BEGIN {
+    FS = ","
+    OFS = " "
+}
+
+{
+    pickUpID=$8
+    totalAmount=$17
+    location[pickUpID]+=totalAmount
+    count[pickUpID]++
+}
+
+END {
+    for(pickUp in location) {
+       average = location[pickUp] / count[pickUp]
+       print average " " pickUp
+    }
+}
