@@ -1,0 +1,8 @@
+Task 1:  
+ 1146  awk -F, -f averageScript 2019-08.csv > augustAverages.txt
+ 1160  sort -nr augustAverages.txt > /mnt/scratch/tommy23fa/cs131/as3/as3.txt
+ 
+Task 2:
+ 1179  awk -F, -f averageBothScript 2019-08.csv > augustAveragesDuo.txt
+ 1181  sort -nr augustAveragesDuo.txt | head -1 >> /mnt/scratch/tommy23fa/cs131/as3/as3.txt
+

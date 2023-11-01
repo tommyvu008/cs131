@@ -1,0 +1,21 @@
+BEGIN {
+    FS = ","
+    OFS = " "
+}
+
+{
+    pickUpID=$8
+    dropOffID=$9
+    combined=pickUpID " - " dropOffID
+    totalAmount=$17
+    location[combined]+=totalAmount
+    count[combined]++
+}
+
+END {
+    for(pickUp in location) {
+       average = location[pickUp] / count[pickUp]
+       print average " " pickUp
+    }
+}
+
