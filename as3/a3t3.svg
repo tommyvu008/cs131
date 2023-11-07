@@ -1,0 +1,15 @@
+#!/usr/local/bin/gnuplot -persist
+
+set style data histograms
+set style fill solid
+set boxwidth 0.5
+
+set terminal pngcairo
+set out 'tipAvg.png'
+
+
+set title "Tip Average by Passenger Count" 
+
+set autoscale x
+set autoscale y
+plot 'tipAvg.dat' using 2:xtic(1) with boxes title "Tip Avg"
