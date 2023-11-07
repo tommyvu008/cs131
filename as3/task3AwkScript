@@ -1,0 +1,16 @@
+BEGIN {
+    FS = ","
+}
+
+NR > 1 {
+    passengers[$4] += $14
+    counts[$4]++
+}
+
+END {
+    for (passenger in passengers) {
+        avg = passengers[passenger] / counts[passenger]
+        print passenger, avg
+    }
+}
+
