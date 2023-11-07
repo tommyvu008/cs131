@@ -1,0 +1,15 @@
+#!/usr/local/bin/gnuplot -persist
+set style fill transparent solid 0.2 noborder
+
+set terminal pngcairo
+set out 'totalAvgHere.png'
+
+
+set title "Distance compared to Total Amount Average" 
+set xlabel "Total Distance" 
+
+NO_ANIMATION = 1
+set autoscale x
+set autoscale y
+
+plot 'totalAvg.dat' using 1:2 with circles lc rgb 'red'
