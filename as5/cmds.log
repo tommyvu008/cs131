@@ -1,0 +1,225 @@
+    1  ls
+    2  mkdir skll
+    3  cd skll/
+    4  git clone https://github.com/genyajoe/cs131-skll-practice
+    5  ls
+    6  cd cs131-skll-practice/
+    7  ls
+    8  ./ mysplit.sh 
+    9  ./mysplit.sh 
+   10  chmod u+rwx mysplit.sh 
+   11  ./mysplit.sh 
+   12  cd
+   13  cd cs131-skll-practice/
+   14  ls
+   15  vim mysplit.sh 
+   16  cd
+   17  pip install skll
+   18  ls
+   19  cd cs131-skll-practice/
+   20  CD
+   21  ls
+   22  pip list | grep skll
+   23  ls | grep wine
+   24  cd cs131-skll-practice/
+   25  ls | grep wine
+   26  gcloud compute scp C:\Users\tommy\Downloads\b_depressed.csv
+   27  gcloud compute scp C:\Users\tommy\Downloads\b_depressed.csv tommy_vu01@instance-1:~/
+   28  ls
+   29  mkdir Kaggle
+   30  ls
+   31  cd Kaggle/
+   32  gcloud compute scp C:\Users\tommy\Downloads\b_depressed.csv tommy_vu01@instance-1:./
+   33  gcloud compute scp C:\Users\tommy\Downloads\b_depressed.csv tommy_vu01@instance-1:./ --recurse
+   34  ls
+   35  cd
+   36  ls
+   37  cd /home/USER
+   38  ls
+   39  history > cmd.log
+   40  ls
+   41  head -2 b_depressed.csv 
+   42  head -1 b_depressed.csv 
+   43  ls
+   44  awk 'FNR > 1 {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   45  ls
+   46  cat averageAge.txt 
+   47  vim b_depressed.csv 
+   48  awk 'FNR > 1 {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   49  cat averageAge.txt 
+   50  rm averageAge.txt 
+   51  echo "4+10" | bc
+   52  awk ' {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   53  cat averageAge.txt 
+   54  rm averageAge.txt 
+   55  awk -F',' '{sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   56  cat averageAge.txt 
+   57  rm averageAge.txt 
+   58  history > cmds.log
+    1  ls
+    2  mkdir skll
+    3  cd skll/
+    4  git clone https://github.com/genyajoe/cs131-skll-practice
+    5  ls
+    6  cd cs131-skll-practice/
+    7  ls
+    8  ./ mysplit.sh 
+    9  ./mysplit.sh 
+   10  chmod u+rwx mysplit.sh 
+   11  ./mysplit.sh 
+   12  cd
+   13  cd cs131-skll-practice/
+   14  ls
+   15  vim mysplit.sh 
+   16  cd
+   17  pip install skll
+   18  ls
+   19  cd cs131-skll-practice/
+   20  CD
+   21  ls
+   22  pip list | grep skll
+   23  ls | grep wine
+   24  cd cs131-skll-practice/
+   25  ls | grep wine
+   26  gcloud compute scp C:\Users\tommy\Downloads\b_depressed.csv
+   27  gcloud compute scp C:\Users\tommy\Downloads\b_depressed.csv tommy_vu01@instance-1:~/
+   28  ls
+   29  mkdir Kaggle
+   30  ls
+   31  cd Kaggle/
+   32  gcloud compute scp C:\Users\tommy\Downloads\b_depressed.csv tommy_vu01@instance-1:./
+   33  gcloud compute scp C:\Users\tommy\Downloads\b_depressed.csv tommy_vu01@instance-1:./ --recurse
+   34  ls
+   35  cd
+   36  ls
+   37  cd /home/USER
+   38  ls
+   39  history > cmd.log
+   40  ls
+   41  head -2 b_depressed.csv 
+   42  head -1 b_depressed.csv 
+   43  ls
+   44  awk 'FNR > 1 {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   45  ls
+   46  cat averageAge.txt 
+   47  vim b_depressed.csv 
+   48  awk 'FNR > 1 {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   49  cat averageAge.txt 
+   50  rm averageAge.txt 
+   51  echo "4+10" | bc
+   52  awk ' {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   53  cat averageAge.txt 
+   54  rm averageAge.txt 
+   55  awk -F',' '{sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   56  cat averageAge.txt 
+   57  rm averageAge.txt 
+   58  history > cmds.log
+   59  history -w
+   60  head -2 b_depressed.csv 
+   61  head -1 b_depressed.csv 
+   62  ls
+   63  awk 'FNR > 1 {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   64  ls
+   65  cat averageAge.txt 
+   66  vim b_depressed.csv 
+   67  awk 'FNR > 1 {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   68  cat averageAge.txt 
+   69  rm averageAge.txt 
+   70  echo "4+10" | bc
+   71  awk ' {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   72  cat averageAge.txt 
+   73  rm averageAge.txt 
+   74  awk -F',' '{sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   75  cat averageAge.txt 
+   76  rm averageAge.txt 
+   77  history > cmds.log
+   78  history -w
+   79  awk -F',' 'NR > 1 {sum += $4; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+   80  cat averageAge.txt 
+   81  head -1 b_depressed.csv 
+   82  awk -F',' '{sum += $2; count++} END {print sum/count}' b_depressed.csv | bc >> averageMale.txt
+   83  cat averageMale.txt 
+   84  awk -F',' '{sum += $3; count++} END {print sum/count}' b_depressed.csv | bc >> averageMale.txt
+   85  cat averageMale.txt 
+   86  awk -F ',' '$3 == 0 {count++} END {print count}' b_depressed.csv 
+   87  awk -F ',' '$3 == 1 {count++} END {print count}' b_depressed.csv 
+   88  awk -F',' '{sum += $5; count++} END {print sum/count}' b_depressed.csv | bc >> averageMarried.txt
+   89  cat averageMarried.txt 
+   90  awk -F',' '{sum += $6; count++} END {print sum/count}' b_depressed.csv | bc >> averageMarried.txt
+   91  cat averageMarried.txt 
+   92  awk -F',' '{sum += $7; count++} END {print sum/count}' b_depressed.csv | bc >> averageEducation.txt
+   93  cat averageEducation.txt 
+   94  awk -F',' '{sum += $8; count++} END {print sum/count}' b_depressed.csv | bc >> averageFamily.txt
+   95  cat averageFamily.txt 
+   96  awk 'NR > 1 { if (min == "" || $12 < min) { min = $12 } if (max == "" || $12 > max) { max = $12 } } END { print "Min:", min; print "Max:", max }' b_depressed.csv > minMax.txt
+   97  cat minMax.txt 
+   98  awk -F ',' 'NR > 1 { if (min == "" || $12 < min) { min = $12 } if (max == "" || $12 > max) { max = $12 } } END { print "Min:", min; print "Max:", max }' b_depressed.csv > minMax.txt
+   99  cat minMax.txt 
+  100  awk -F',' '{sum += $12; count++} END {print sum/count}' b_depressed.csv | bc >> averageLivingExp.txt
+  101  ls
+  102  cat averageLivingExp.txt 
+  103  awk -F',' '{sum += $8; count++} END {print sum/count}' b_depressed.csv | bc >> averageFamily.txt
+  104  awk -F',' '{sum += $12; count++} END {print sum/count}' b_depressed.csv | bc >> averageLivingExp.txt
+  105  head -2 b_depressed.csv 
+  106  awk -F',' 'NR > 1 {sum += $12; count++} END {print sum/count}' b_depressed.csv | bc >> averageAge.txt
+  107  awk -F',' 'NR > 1 {sum += $9; count++} END {print sum/count}' b_depressed.csv | bc >> averageAgeTest.txt
+  108  awk -F',' 'NR > 1 {sum += $8; count++} END {print sum/count}' b_depressed.csv | bc >> averageAgeTest.txt
+  109  awk -F',' '{print $9}' b_depressed.csv > test.txt
+  110  head -2 test
+  111  head -2 test.txt 
+  112  awk -F',' 'NR > 1 {print $9}' b_depressed.csv > test.txt
+  113  head -2 test.txt 
+  114  head -1 test.txt 
+  115  head -5 test.txt 
+  116  awk -F',' 'NR > 1 {sum += $9; count++} END {print sum/count}' b_depressed.csv 
+  117  awk -F',' 'NR > 1 {sum += $9; count++} END {print sum}' b_depressed.csv 
+  118  awk -F',' 'NR > 1 {sum += $12; count++} END {print sum/count}' b_depressed.csv | bc >> averageLivingExp.txt
+  119  awk -F',' 'NR > 1 {sum += $12; count++} END {print sum}' b_depressed.csv | bc >> averageLivingExp.txt
+  120  awk -F',' 'NR > 1 {sum += $12; count++} END {print sum}' b_depressed.csv  >> averageLivingExp.txt
+  121  cat average
+  122  rm averageLivingExp.txt 
+  123  awk -F',' 'NR > 1 {sum += $12; count++} END {print sum}' b_depressed.csv  >> averageLivingExp.txt
+  124  cat averageLivingExp.txt 
+  125  vim average
+  126  vim averageLivingExp.txt 
+  127  cat averageLivingExp.txt  | bc
+  128  awk -F ',' 'NR > 1 { if (min == "" || $12 < min) { min = $12 } if (max == "" || $12 > max) { max = $12 } } END { print "Min:", min; print "Max:", max }' b_depressed.csv > minMax.txt
+  129  cat minMax.txt 
+  130  awk -F ',' 'NR > 1 { if (min == "" || $14 < min) { min = $14 } if (max == "" || $14 > max) { max = $14 } } END { print "Min:", min; print "Max:", max }' b_depressed.csv > income.txt
+  131  awk -F',' 'NR > 1 {sum += $14; count++} END {print sum}' b_depressed.csv  >> averageWorking.txt
+  132  cat averageWorking.txt 
+  133  awk -F',' 'NR > 1 {sum += $14; count++} END {print sum/count}' b_depressed.csv || bc >> averageWorking.txt
+  134  awk -F',' 'NR > 1 {sum += $14; count++} END {print sum/count}' b_depressed.csv | bc >> averageWorking.txt 
+  135  cat averageWorking.txt 
+  136  vim averageLivingExp.txt 
+  137  bc cat averageLivingExp.txt 
+  138  cat averageLivingExp.txt 
+  139  bc cat averageLivingExp.txt 
+  140  vim averageLivingExp.txt 
+  141  bc cat averageLivingExp.txt 
+  142  cat averageLivingExp.txt | bc
+  143  head -1 b_depressed.csv 
+  144  awk -F',' 'NR > 1 {sum += $23; count++} END {print sum/count}' b_depressed.csv || bc >> averageDepression.txt
+  145  awk -F',' 'NR > 1 {sum += $23; count++} END {print sum/count}' b_depressed.csv | bc >> averageDepression.txt 
+  146  cat averageDepression.txt 
+  147  history > cmdsHistory.log
+  148  pwd
+  149  ls
+  150  history > cmdsHistory.log
+  151  cat cmdsHistory.log 
+  152  ls
+  153  chmod u+rwx gnuScript 
+  154  history > huh.txt
+  155  cat huh.txt 
+  156  vim gnuScr
+  157  vim gnuScript 
+  158  rm gnuScr
+  159  vim gnuScript1
+  160  chmod u+rwx gnuScript1
+  161  awk -f gnuScript1 b_depressed.csv > costDepression.txt
+  162  head -10 costDepression.txt 
+  163  sort -n costDepression.txt >> sortedCostDepression.txt
+  164  head -10 sortedCostDepression.txt 
+  165  pwd
+  166  vim gnuScript1
+  167  history >> cmds.log
