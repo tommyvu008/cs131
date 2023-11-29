@@ -1,0 +1,17 @@
+BEGIN {
+    FS = ","
+}
+
+NR > 1 {
+
+if($23 == 1) {
+
+    live[$12]++
+}
+}
+
+END {
+    for (cost in live) {
+        print cost, live[cost]
+    }
+}
